@@ -1,0 +1,3 @@
+-----------------------ThoughtNote-----------------------------
+
+In this assignment of javascript a simple calculator has made which takes two numbers as input and other is operator in which a dropdown is given as operators used in calculation. A button to submit in which when a user clicks the answer will be shown in answer text box. In javascript a function is made to clear the screen and a ans function is made to get the answer. In ans function two variables are defined and by using if else the conditions are applied and the calculator works in a manner needed.
