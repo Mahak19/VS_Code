@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!--JavaScript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!--CSS-->
+    <link href="style.css" rel="stylesheet">
+
+    <!--Fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+
+    <title>E-Commerce</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                    <p>Ecommerce</p>
+            </div>
+            <div class="col-md-6" style="padding: 0px;">
+                <form>
+                    <span><input type="search" placeholder=" Product name,etc.."><button class="buton" type="search">Search</button></span>
+                </form>
+            </div>
+            <div class="col-md-1" style="padding: 15px;">
+                <button class="btn btn-success buton" type="login">Login</button>
+                
+            </div>
+            <div class="col-md-1" style="padding: 20px;">
+                <i class="fas fa-shopping-cart fa-blue fa-xl"></i>
+            </div>
+        </div>
+    </div>
+</div>
+   <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sm-1">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+       <div class="collapse navbar-collapse" style="margin-left: 400px;" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">All Products</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" >
+                Women
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">All</a>
+                <a class="dropdown-item" href="#">Dresses</a>
+                <a class="dropdown-item" href="#">Pants</a>
+                <a class="dropdown-item" href="#">Skirts</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Men
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">All</a>
+                  <a class="dropdown-item" href="#">Pants</a>
+                  <a class="dropdown-item" href="#">Shirts</a>
+                  <a class="dropdown-item" href="#">Jeans</a>
+                </div>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Kids</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+          </ul>
+          </div>
+      </nav>
+    </div>
+    </header>
+</body>
+</html> @media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="searchtab"] {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+    .searchtab {
+        width: 638px;
+    }
+  
+  }
+  @media screen and (max-width: 986px) {
+    .searchtab {
+        width: 100%;
+    }
+    
+  }

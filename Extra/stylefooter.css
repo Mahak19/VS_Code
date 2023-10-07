@@ -1,0 +1,11 @@
+.a{
+    background-color: black;
+}
+.container-fluid{
+    background-color: black;
+    color: white;
+    text-align:center;
+}
+hr{
+    width: 50%;
+}
