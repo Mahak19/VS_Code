@@ -1,0 +1,5 @@
+                                                                     THOUGHT NOTE
+This project is made in notepad with .html extension instead of visual studio but can be opened in it.
+In this project every tag is under the body tag. It is a webpage which will direct you about the turism company of  New York.Along with the Contact us,About us & climate.They all will open in a new webpage as a target url is used, all of them have their own specific information. In contact us form is used which needs to be fitted and after submitting the server will store the information .In about us mainly paragraph atg is used for information & in climate table is used for creating with &deg; for the symbol. Various different tags are used to make the heading look in differently. At last table tag is used for alligning the images. 
+Apart from all the tags in this some attributes are also used for akigning and giving some color.
+In short, all the common and mostly used tags are used which define it's usage through the use of single line comments and is easily understandable.
