@@ -1,0 +1,12 @@
+				Thought Note
+
+Open all the files in vscode and run for the output.
+
+In this assignment of html and css various selectors are being used to give styling to those particular content.
+Among others various selectors are applied when the mouse is hovered or clicked on particular box or text.
+Alignment can also be seen for aligning the content.Various different colors are also used to give them different effect,
+opacity is used for making the image look ligher so that the text can be identified easily by the user.
+Styling is also given in style.css and which is linked in assignment2 through link tag.
+Grids are used for aligning images with gardient effect on it's background in which various formatting is done.
+For styling of text text shape,transform,size,color,padding are also given to make them look differently.
+Position is given to make text shifting from to another place.Centering of the content by using justify and gaps between needed rows or columns are also given.All the styles are easy to use and understand. 

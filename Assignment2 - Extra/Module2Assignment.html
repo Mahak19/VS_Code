@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <style>
+            .button{
+            z-index: 1;
+            border-radius: 10px;
+            padding: 10px 95px;
+            display: inline-block;
+            background-color:rgb(249, 249, 249);
+            color:rgb(73, 2, 73);
+            border-top-left-radius:10px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+            text-decoration: none;
+            border:solid purple;
+            border-bottom: 5px solid purple;
+           }
+           .a{
+            margin-top: 490px;
+            margin-left:200px;
+           }
+           .a:hover{
+            background-color: yellowgreen;
+            color:rgb(244, 242, 245)
+           }
+            .a:active{
+                background-color: rgb(6, 80, 80);
+                color:rgb(0, 11, 8);
+            }
+           .b{
+            margin-top: 490px;
+            margin-left:0px;
+           }
+           .b:hover{
+            background-color: yellowgreen;
+            color:rgb(244, 242, 245)
+           }
+            .b:active{
+                background-color: rgb(6, 80, 80);
+                color:rgb(0, 11, 8);
+            }
+           .c{
+            margin-top: 490px;
+            margin-left: 0px;
+           }
+           .c:hover{
+            background-color: yellowgreen;
+            color:rgb(244, 242, 245)
+           }
+            .c:active{
+                background-color: rgb(6, 80, 80);
+                color:rgb(0, 11, 8);
+            }
+           .imag{
+            position: fixed;
+            background-repeat: no-repeat;
+            background-size:cover;
+            height:600px;
+            width: 1300px;
+            z-index: -2;
+           }
+           .image{
+            z-index: -1;
+            position: fixed;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            padding-left: 190px;
+            filter:opacity(80%);
+           }
+          
+           
+        </style>
+    </head>
+    <body>
+        <img src="Restaurant.jpg" class="imag"></img> <!-- background images are styled by class selectors and giving various styles and shape when mouse is hover or click is done-->
+        <img src="Restaurant_inside.jpg" class="image"></img>
+       
+        <div>
+        <a href="OurMenu.html" class="button a" target="_blank">Our Menu</a><!--Giving style to button when clicked will direct user to another webpage-->
+        <a href="ContactUs.html" class="button b" target="abc">Contact Us</a>
+        <a href="AboutUs.html" class="button c" target="abc">About Us</a>
+        </div>
+    </body>
+</html>
