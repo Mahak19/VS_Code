@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--Font Awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+
+  <!--Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!--JavaScript-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!--CSS-->
+  <link href="styl.css" rel="stylesheet">
+
+  <!--Fonts-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Croissant One">
+
+  <title>E-Commerce</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* For star rating */
+    .checked {
+        color: orange;
+    }
+
+    /*For Add to cart button*/
+    button{
+        background-color: rgb(255, 187, 0);
+    }
+
+    /*For dresses color changing dots is specified in few of the cards*/
+    .dot {
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        display: inline-block;
+    }
+
+    /*Body background*/
+    body{
+        background-color: rgb(247, 247, 242);
+    }
+
+    /*Card properties*/
+    .card{
+        width: 80% !important;
+    }
+
+  </style>
+</head>
+<body>
+    <!--Header Section-->
+    <div id="header"></div>
+
+    <!--Large Devices like next hub-->
+    <div class="container-fluid d-none d-lg-block">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="card card_spaceing" style="margin: auto;">
+                                <img src="https://i.pinimg.com/474x/2d/ea/72/2dea727d72f01c59033ba255d8cc3526.jpg" class="card-img-top" alt="" style="height: 250px">
+                                <div class="card-body text-center">                          
+                                    <h5 class="card-title fw-bold">BIBA</h5>                                    
+                                    <p class="card-text mb-2">Women <br>Fashionable Dress</p>
+                                    <h5 class="card-title fw-bold"><sup>&#x20b9</sup>1999</h5>
+                                    <span><pre>M.R.P.<strike><sup>&#x20b9</sup>2299</strike>(65% off)<br>Buy 3 get 5% Off,Buy...<br></pre>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span><br><br>
+                                    <a href="cart.html" class="btn cart-btn"><button><i class="fa-solid fa-cart-shopping"></i>Add to
+                                        cart</a></button>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="col-lg-3">
+                            <div class="card card_spaceing" style="margin: auto;">
+                                <img src="https://i.pinimg.com/564x/0f/e6/e2/0fe6e219195935bb3591f5bf66ae0a1a.jpg" class="card-img-top" alt="" style="height: 250px">
+                                <div class="card-body text-center">                             
+                                    <h5 class="card-title fw-bold">Fashion store</h5>                                    
+                                    <p class="card-text mb-2">Cut out women and Girls<br>Fashionable Dresses fit s....</p>
+                                    <h5 class="card-title fw-bold"><sup>&#x20b9</sup>929</h5>
+                                    <span><pre>M.R.P.<strike><sup>&#x20b9</sup>1599</strike>(65% off)<br>Buy 3 get 5% Off,Buy...<br></pre>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span><br><br>
+                                    <a href="cart.html" class="btn cart-btn"><button><i class="fa-solid fa-cart-shopping"></i>Add to
+                                        cart</a></button>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="col-lg-3">
+                            <div class="card card_spaceing" style="margin: auto;">
+                                <img src="https://i.pinimg.com/564x/8c/79/4c/8c794c1b9272c87a6ffa563459bb389e.jpg" class="card-img-top" alt="" style="height: 250px">
+                                <div class="card-body text-center"> 
+                                    <span class="dot" style="background-color: rgb(175, 174, 175);"></span>&nbsp;
+                                    <span class="dot" style="background-color: rgb(186, 191, 228);"></span>&nbsp;                                    
+                                    <h5 class="card-title fw-bold">Stylophile</h5>                                    
+                                    <p class="card-text mb-2">Men's Slim Fit Stretchable <br>Cotton Lycra Denim Jeans</p>
+                                    <h5 class="card-title fw-bold"><sup>&#x20b9</sup>629</h5>
+                                    <span><pre>M.R.P.<strike><sup>&#x20b9</sup>999</strike>(65% off)<br>Buy 3 get 5% Off,Buy 4...<br></pre>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span><br><br>
+                                    <a href="cart.html" class="btn cart-btn"><button><i class="fa-solid fa-cart-shopping"></i>Add to
+                                        cart</a></button>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="col-lg-3">
+                            <div class="card card_spaceing" style="margin: auto;">
+                                <img src="https://i.pinimg.com/474x/b8/ce/c2/b8cec28d148da05d42adc97af6eeec18.jpg" class="card-img-top" alt="" style="height: 250px">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title fw-bold">Melano</h5>                                    
+                                    <p class="card-text mb-2">Slim Fit Men Wears<br> T-shirts regular fit s....</p>
+                                    <h5 class="card-title fw-bold"><sup>&#x20b9</sup>899</h5>
+                                    <span><pre>M.R.P.<strike><sup>&#x20b9</sup>999</strike>(65% off)<br>Buy 3 get 5% Off,Buy 4...<br></pre>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span><br><br>
+                                    <a href="cart.html" class="btn cart-btn"><button><i class="fa-solid fa-cart-shopping"></i>Add to
+                                        cart</a></button>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="card card_spaceing" style="margin: auto;">
+                                <img src="https://i.pinimg.com/474x/f0/d8/bd/f0d8bd787322c35f96627fea2cf450b9.jpg" class="card-img-top" alt="" style="height: 250px">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title fw-bold">JB Fashions</h5>                                    
+                                    <p class="card-text mb-2">Dresses for women||<br>Western Dresses for...</p>
+                                    <h5 class="card-title fw-bold"><sup>&#x20b9</sup>1629</h5>
+                                    <span><pre>M.R.P.<strike><sup>&#x20b9</sup>2999</strike>(65% off)<br>20+ bought in past mon..<br></pre>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span><br><br>
+                                    <a href="cart.html" class="btn cart-btn"><button><i class="fa-solid fa-cart-shopping"></i>Add to
+                                        cart</a></button>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="col-lg-3">
+                            <div class="card card_spaceing" style="margin: auto;">
+                                <img src="https://i.pinimg.com/474x/12/4e/01/124e0155b05bafb9fef4e79ab1ac6760.jpg" class="card-img-top" alt="" style="height: 250px">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title fw-bold">Lebi store</h5>                                    
+                                    <p class="card-text mb-2">Rayon solid Button Dress<br>regular fit s....</p>
+                                    <h5 class="card-title fw-bold"><sup>&#x20b9</sup>429</h5>
+                                    <span><pre>M.R.P.<strike><sup>&#x20b9</sup>799</strike>(65% off)<br>Buy 2 get 5% Off,Buy...<br></pre>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span><br><br>
+                                    <a href="cart.html" class="btn cart-btn"><button><i class="fa-solid fa-cart-shopping"></i>Add to
+                                        cart</a></button>
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="col-lg-3">
+                            <div class="card card_spaceing" style="margin: auto;">
+                                <img src="https://i.pinimg.com/474x/f8/72/33/f872331a303f422d1f70e8b552fc04d4.jpg" class="card-img-top" alt="" style="height: 250px">
+                                <div class="card-body text-center">
+                                    <span class="dot" style="background-color: rgb(50, 2, 70);"></span>&nbsp;
+                                    <span class="dot" style="background-color: rgb(25, 3, 105);"></span>&nbsp;
+                                    <span class="dot"  style="background-color: rgb(235, 229, 227);"></span> &nbsp;<u>+2</u>  
+                                    <h5 class="card-title fw-bold">Van Huesen</h5>                                    
+                                    <p class="card-text mb-2">Slim Fit<br> T-shirts regular fit s....</p>
+                                    <h5 class="card-title fw-bold"><sup>&#x20b9</sup>899</h5>
+                                    <span><pre>M.R.P.<strike><sup>&#x20b9</sup>999</strike>(65% off)<br>Get 5% Off,Buy 4...<br></pre>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span><br><br>
+                                    <a href="cart.html" class="btn cart-btn"><button><i class="fa-solid fa-cart-shopping"></i>Add to
+                                        cart</a></button>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="col-lg-3">
+                            <div class="card card_spaceing" style="margin: auto;">
+                                <img src="https://i.pinimg.com/474x/b2/fe/c0/b2fec09766d6797a9cb9959a601ef8db.jpg" class="card-img-top" alt="" style="height: 250px">
+                                <div class="card-body text-center"> 
+                                    <span class="dot" style="background-color: rgb(196, 19, 175);"></span>&nbsp;
+                                    <span class="dot" style="background-color: rgb(202, 181, 19);"></span>&nbsp;
+                                    <span class="dot"  style="background-color: rgb(192, 62, 16);"></span> &nbsp;<u>+1</u>                           
+                                    
+                                    <h5 class="card-title fw-bold">Aashwan</h5>                                    
+                                    <p class="card-text mb-2">Cut out women and Girls<br> Fashion Dresses fit s....</p>
+                                    <h5 class="card-title fw-bold"><sup>&#x20b9</sup>999</h5>
+                                    <span><pre>M.R.P.<strike><sup>&#x20b9</sup>1399</strike>(65% off)<br>Buy 3 get 5% Off,Buy...<br></pre>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span><br><br>
+                                    <a href="cart.html" class="btn cart-btn"><button><i class="fa-solid fa-cart-shopping"></i>Add to
+                                        cart</a></button>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="card card_spaceing" style="margin: auto;">
+                                <img src="https://i.pinimg.com/474x/6c/0e/52/6c0e52a18bdc0ecb8784bcbf99b32b78.jpg" class="card-img-top" alt="" style="height: 250px">
+                                <div class="card-body text-center">                                    
+                                    <span class="dot" style="background-color: rgb(103, 101, 6);"></span>&nbsp;
+                                    <span class="dot" style="background-color: rgb(13, 17, 99);"></span>&nbsp;
+                                    <span class="dot"  style="background-color: rgb(8, 90, 25);"></span> &nbsp;<u>+1</u>                                                               
+                                    <h5 class="card-title fw-bold">JB Fashions</h5>                                    
+                                    <p class="card-text mb-2">Dresses for women||<br>Western Dresses for...</p>
+                                    <h5 class="card-title fw-bold"><sup>&#x20b9</sup>1629</h5>
+                                    <span><pre>M.R.P.<strike><sup>&#x20b9</sup>2999</strike>(65% off)<br>20+ bought in past mon..<br></pre>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span><br><br>
+                                    <a href="cart.html" class="btn cart-btn"><button><i class="fa-solid fa-cart-shopping"></i>Add to
+                                        cart</a></button>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="col-lg-3">
+                            <div class="card card_spaceing" style="margin: auto;">
+                                <img src="https://i.pinimg.com/474x/c7/2a/57/c72a57374b20f7d802cc8bf305b86c33.jpg" class="card-img-top" alt="" style="height: 250px">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title fw-bold">Lebi store</h5>                                    
+                                    <p class="card-text mb-2">Rayon solid Button Dress<br>regular fit s....</p>
+                                    <h5 class="card-title fw-bold"><sup>&#x20b9</sup>429</h5>
+                                    <span><pre>M.R.P.<strike><sup>&#x20b9</sup>799</strike>(65% off)<br>Buy 2 get 5% Off,Buy...<br></pre>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span><br><br>
+                                    <a href="cart.html" class="btn cart-btn"><button><i class="fa-solid fa-cart-shopping"></i>Add to
+                                        cart</a></button>
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="col-lg-3">
+                            <div class="card card_spaceing" style="margin: auto;">
+                                <img src="https://i.pinimg.com/474x/da/86/a9/da86a981b0357c0d5fa67d5f62e445b0.jpg" class="card-img-top" alt="" style="height: 250px">
+                                <div class="card-body text-center">
+                                    <span class="dot" style="background-color: rgb(50, 2, 70);"></span>&nbsp;
+                                    <span class="dot" style="background-color: rgb(25, 3, 105);"></span>&nbsp;
+                                    <span class="dot"  style="background-color: rgb(235, 229, 227);"></span> &nbsp;<u>+2</u>  
+                                    <h5 class="card-title fw-bold">Van Huesen</h5>                                    
+                                    <p class="card-text mb-2">Slim Fit<br> T-shirts regular fit s....</p>
+                                    <h5 class="card-title fw-bold"><sup>&#x20b9</sup>899</h5>
+                                    <span><pre>M.R.P.<strike><sup>&#x20b9</sup>999</strike>(65% off)<br>Get 5% Off,Buy 4...<br></pre>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span><br><br>
+                                    <a href="cart.html" class="btn cart-btn"><button><i class="fa-solid fa-cart-shopping"></i>Add to
+                                        cart</a></button>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="col-lg-3">
+                            <div class="card card_spaceing" style="margin: auto;">
+                                <img src="https://i.pinimg.com/474x/f9/93/b9/f993b9b28cea25c06e61b7b5254ba9c2.jpg" class="card-img-top" alt="" style="height: 250px">
+                                <div class="card-body text-center"> 
+                                    <span class="dot" style="background-color: rgb(196, 19, 175);"></span>&nbsp;
+                                    <span class="dot" style="background-color: rgb(202, 181, 19);"></span>&nbsp;
+                                    <span class="dot"  style="background-color: rgb(192, 62, 16);"></span> &nbsp;<u>+1</u>                           
+                                    <h5 class="card-title fw-bold">Aashwan</h5>                                    
+                                    <p class="card-text mb-2">Cut out women and Girls<br> Fashion Dresses fit s....</p>
+                                    <h5 class="card-title fw-bold"><sup>&#x20b9</sup>999</h5>
+                                    <span><pre>M.R.P.<strike><sup>&#x20b9</sup>1399</strike>(65% off)<br>Buy 3 get 5% Off,Buy...<br></pre>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span><br><br>
+                                    <a href="cart.html" class="btn cart-btn"><button><i class="fa-solid fa-cart-shopping"></i>Add to
+                                        cart</a></button>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="card card_spaceing" style="margin: auto;">
+                                <img src="https://i.pinimg.com/474x/f0/aa/26/f0aa26144aa4fbaa032e78db64b591a0.jpg" class="card-img-top" alt="" style="height: 250px">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title fw-bold">JB Fashions</h5>                                    
+                                    <p class="card-text mb-2">Dresses for women||<br>Western Dresses for...</p>
+                                    <h5 class="card-title fw-bold"><sup>&#x20b9</sup>1629</h5>
+                                    <span><pre>M.R.P.<strike><sup>&#x20b9</sup>2999</strike>(65% off)<br>20+ bought in past mon..<br></pre>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span><br><br>
+                                    <a href="cart.html" class="btn cart-btn"><button><i class="fa-solid fa-cart-shopping"></i>Add to
+                                        cart</a></button>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="col-lg-3">
+                            <div class="card card_spaceing" style="margin: auto;">
+                                <img src="https://i.pinimg.com/474x/bb/56/75/bb567566ecc3ab68e8b8b5e868490868.jpg" class="card-img-top" alt="" style="height: 250px">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title fw-bold">Lebi store</h5>                                    
+                                    <p class="card-text mb-2">Rayon solid Button Dress<br>regular fit s....</p>
+                                    <h5 class="card-title fw-bold"><sup>&#x20b9</sup>429</h5>
+                                    <span><pre>M.R.P.<strike><sup>&#x20b9</sup>799</strike>(65% off)<br>Buy 2 get 5% Off,Buy...<br></pre>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span><br><br>
+                                    <a href="cart.html" class="btn cart-btn"><button><i class="fa-solid fa-cart-shopping"></i>Add to
+                                        cart</a></button>
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="col-lg-3">
+                            <div class="card card_spaceing" style="margin: auto;">
+                                <img src="https://i.pinimg.com/474x/66/0b/23/660b2398e5d73b532087b811a9d38c9c.jpg" class="card-img-top" alt="" style="height: 250px">
+                                <div class="card-body text-center">
+                                    <span class="dot" style="background-color: rgb(50, 2, 70);"></span>&nbsp;
+                                    <span class="dot" style="background-color: rgb(25, 3, 105);"></span>&nbsp;
+                                    <span class="dot"  style="background-color: rgb(235, 229, 227);"></span> &nbsp;<u>+2</u>  
+                                    <h5 class="card-title fw-bold">Van Huesen</h5>                                    
+                                    <p class="card-text mb-2">Slim Fit<br> T-shirts regular fit s....</p>
+                                    <h5 class="card-title fw-bold"><sup>&#x20b9</sup>899</h5>
+                                    <span><pre>M.R.P.<strike><sup>&#x20b9</sup>999</strike>(65% off)<br>Get 5% Off,Buy...<br></pre>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span><br><br>
+                                    <a href="cart.html" class="btn cart-btn"><button><i class="fa-solid fa-cart-shopping"></i>Add to
+                                        cart</a></button>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="col-lg-3">
+                            <div class="card card_spaceing" style="margin: auto;">
+                                <img src="https://i.pinimg.com/474x/b1/3b/c1/b13bc1ad9121872117a0a5eb1231e332.jpg" class="card-img-top" alt="" style="height: 250px">
+                                <div class="card-body text-center"> 
+                                    <span class="dot" style="background-color: rgb(30, 11, 93);"></span>&nbsp;
+                                    <h5 class="card-title fw-bold">Aashwan</h5>                                    
+                                    <p class="card-text mb-2">Cut out women and Girls<br> Fashion Dresses fit s....</p>
+                                    <h5 class="card-title fw-bold"><sup>&#x20b9</sup>999</h5>
+                                    <span><pre>M.R.P.<strike><sup>&#x20b9</sup>1399</strike>(65% off)<br>Buy 3 get 5% Off,Buy...<br></pre>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span><br><br>
+                                    <a href="cart.html" class="btn cart-btn"><button><i class="fa-solid fa-cart-shopping"></i>Add to
+                                        cart</a></button>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+
+    <!--Medium Device like surface pro 7-->
+    <div class="container-fluid d-none d-lg-none d-md-block">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card card_spaceing" style="margin: auto;">
+                                <img src="https://i.pinimg.com/474x/b3/15/b9/b315b9cf9924e6a767f3ccc1a225cd1a.jpg" class="card-img-top" alt="" style="height: 250px">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title fw-bold">JB Fashions</h5>                                    
+                                    <p class="card-text mb-2">Dresses for women||<br>Western Dresses for...</p>
+                                    <h5 class="card-title fw-bold"><sup>&#x20b9</sup>1629</h5>
+                                    <span><pre>M.R.P.<strike><sup>&#x20b9</sup>2999</strike>(65% off)<br>20+ bought in past months<br></pre>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span><br><br>
+                                    <a href="cart.html" class="btn cart-btn"><button><i class="fa-solid fa-cart-shopping"></i>Add to
+                                        cart</a></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card card_spaceing" style="margin: auto;">
+                                <img src="https://i.pinimg.com/474x/3c/af/db/3cafdb81565e1585ca2efccb1e3dda26.jpg" class="card-img-top" alt="" style="height: 250px">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title fw-bold">JB Fashions</h5>                                    
+                                    <p class="card-text mb-2">Stylish collection||<br>Fashionable for...</p>
+                                    <h5 class="card-title fw-bold"><sup>&#x20b9</sup>1629</h5>
+                                    <span><pre>M.R.P.<strike><sup>&#x20b9</sup>2999</strike>(65% off)<br>20+ bought in past months<br></pre>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span><br><br>
+                                    <a href="cart.html" class="btn cart-btn"><button><i class="fa-solid fa-cart-shopping"></i>Add to
+                                        cart</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card card_spaceing" style="margin: auto;">
+                                <img src="https://i.pinimg.com/474x/42/8a/e6/428ae6178b5b253c15d1ea5e4e727b5b.jpg" class="card-img-top" alt="" style="height: 250px">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title fw-bold">JB Fashions</h5>                                    
+                                    <p class="card-text mb-2">Dresses for women||<br>Western Dresses for...</p>
+                                    <h5 class="card-title fw-bold"><sup>&#x20b9</sup>1629</h5>
+                                    <span><pre>M.R.P.<strike><sup>&#x20b9</sup>2999</strike>(65% off)<br>20+ bought in past months<br></pre>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span><br><br>
+                                    <a href="cart.html" class="btn cart-btn"><button><i class="fa-solid fa-cart-shopping"></i>Add to
+                                        cart</a></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card card_spaceing" style="margin: auto;">
+                                <img src="https://i.pinimg.com/474x/75/82/c0/7582c0c7c6ec7a0bb27ec92acdeb4244.jpg" class="card-img-top" alt="" style="height: 250px">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title fw-bold">JB Fashions</h5>                                    
+                                    <p class="card-text mb-2">Stylish collection||<br>Fashionable for...</p>
+                                    <h5 class="card-title fw-bold"><sup>&#x20b9</sup>1629</h5>
+                                    <span><pre>M.R.P.<strike><sup>&#x20b9</sup>2999</strike>(65% off)<br>20+ bought in past months<br></pre>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span><br><br>
+                                    <a href="cart.html" class="btn cart-btn"><button><i class="fa-solid fa-cart-shopping"></i>Add to
+                                        cart</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card card_spaceing" style="margin: auto;">
+                                <img src="https://i.pinimg.com/474x/8b/bf/e6/8bbfe6fbfc9b28d646c75702c019570f.jpg" class="card-img-top" alt="" style="height: 250px">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title fw-bold">JB Fashions</h5>                                    
+                                    <p class="card-text mb-2">Dresses for women||<br>Western Dresses for...</p>
+                                    <h5 class="card-title fw-bold"><sup>&#x20b9</sup>1629</h5>
+                                    <span><pre>M.R.P.<strike><sup>&#x20b9</sup>2999</strike>(65% off)<br>20+ bought in past months<br></pre>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span><br><br>
+                                    <a href="cart.html" class="btn cart-btn"><button><i class="fa-solid fa-cart-shopping"></i>Add to
+                                        cart</a></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card card_spaceing" style="margin: auto;">
+                                <img src="https://i.pinimg.com/474x/9e/54/62/9e546266f429b6fac51ae942e79ee0ca.jpg" class="card-img-top" alt="" style="height: 250px">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title fw-bold">JB Fashions</h5>                                    
+                                    <p class="card-text mb-2">Stylish collection||<br>Fashionable for...</p>
+                                    <h5 class="card-title fw-bold"><sup>&#x20b9</sup>1629</h5>
+                                    <span><pre>M.R.P.<strike><sup>&#x20b9</sup>2999</strike>(65% off)<br>20+ bought in past months<br></pre>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span><br><br>
+                                    <a href="cart.html" class="btn cart-btn"><button><i class="fa-solid fa-cart-shopping"></i>Add to
+                                        cart</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card card_spaceing" style="margin: auto;">
+                                <img src="https://i.pinimg.com/474x/6c/0e/52/6c0e52a18bdc0ecb8784bcbf99b32b78.jpg" class="card-img-top" alt="" style="height: 250px">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title fw-bold">JB Fashions</h5>                                    
+                                    <p class="card-text mb-2">Dresses for women||<br>Western Dresses for...</p>
+                                    <h5 class="card-title fw-bold"><sup>&#x20b9</sup>1629</h5>
+                                    <span><pre>M.R.P.<strike><sup>&#x20b9</sup>2999</strike>(65% off)<br>20+ bought in past months<br></pre>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span><br><br>
+                                    <a href="cart.html" class="btn cart-btn"><button><i class="fa-solid fa-cart-shopping"></i>Add to
+                                        cart</a></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card card_spaceing" style="margin: auto;">
+                                <img src="https://i.pinimg.com/474x/a9/cf/73/a9cf73ed2920ef3cd5de2c9216b5bbec.jpg" class="card-img-top" alt="" style="height: 250px">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title fw-bold">JB Fashions</h5>                                    
+                                    <p class="card-text mb-2">Stylish collection||<br>Fashionable for...</p>
+                                    <h5 class="card-title fw-bold"><sup>&#x20b9</sup>1629</h5>
+                                    <span><pre>M.R.P.<strike><sup>&#x20b9</sup>2999</strike>(65% off)<br>20+ bought in past months<br></pre>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span><br><br>
+                                    <a href="cart.html" class="btn cart-btn"><button><i class="fa-solid fa-cart-shopping"></i>Add to
+                                        cart</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+
+    <!--Small Device like galaxy fold-->
+    <div class="container-fluid d-block d-lg-none d-md-none">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card card_spaceing" style="margin: auto;">
+                                <img src="https://i.pinimg.com/474x/c8/cc/61/c8cc61f4e6c8c1af4be2225cafb47508.jpg" class="card-img-top" alt="" style="height: 250px">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title fw-bold">JB Fashions</h5>                                    
+                                    <p class="card-text mb-2">Dresses for women||<br>Western Dresses for...</p>
+                                    <h5 class="card-title fw-bold"><sup>&#x20b9</sup>1629</h5>
+                                    <span><pre>M.R.P.<strike><sup>&#x20b9</sup>2999</strike>(65% off)<br>20+ bought in past months<br></pre>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span><br><br>
+                                    <a href="cart.html" class="btn cart-btn"><button><i class="fa-solid fa-cart-shopping"></i>Add to
+                                        cart</a></button>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card card_spaceing" style="margin: auto;">
+                                <img src="https://i.pinimg.com/474x/5f/b8/af/5fb8affd2c5d7c0ef4d52aec564efde7.jpg" class="card-img-top" alt="" style="height: 250px">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title fw-bold">JB Fashions</h5>                                    
+                                    <p class="card-text mb-2">Dresses for men||<br>Western Dresses for...</p>
+                                    <h5 class="card-title fw-bold"><sup>&#x20b9</sup>1629</h5>
+                                    <span><pre>M.R.P.<strike><sup>&#x20b9</sup>2999</strike>(65% off)<br>20+ bought in past months<br></pre>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span><br><br>
+                                    <a href="cart.html" class="btn cart-btn"><button><i class="fa-solid fa-cart-shopping"></i>Add to
+                                        cart</a></button>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card card_spaceing" style="margin: auto;">
+                                <img src="https://i.pinimg.com/474x/aa/89/fc/aa89fc299cb568beadb9d5b1264c0073.jpg" class="card-img-top" alt="" style="height: 250px">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title fw-bold">JB Fashions</h5>                                    
+                                    <p class="card-text mb-2">Dresses for kids||<br>Western Dresses for...</p>
+                                    <h5 class="card-title fw-bold"><sup>&#x20b9</sup>1629</h5>
+                                    <span><pre>M.R.P.<strike><sup>&#x20b9</sup>2999</strike>(65% off)<br>20+ bought in past months<br></pre>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span><br><br>
+                                    <a href="cart.html" class="btn cart-btn"><button><i class="fa-solid fa-cart-shopping"></i>Add to
+                                        cart</a></button>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card card_spaceing" style="margin: auto;">
+                                <img src="https://i.pinimg.com/474x/86/bd/6d/86bd6d315c5f5abd09eb260370b6b282.jpg" class="card-img-top" alt="" style="height: 250px">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title fw-bold">JB Fashions</h5>                                    
+                                    <p class="card-text mb-2">Dresses for mens||<br>Western Dresses for...</p>
+                                    <h5 class="card-title fw-bold"><sup>&#x20b9</sup>1629</h5>
+                                    <span><pre>M.R.P.<strike><sup>&#x20b9</sup>2999</strike>(65% off)<br>20+ bought in past months<br></pre>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span><br><br>
+                                    <a href="cart.html" class="btn cart-btn"><button><i class="fa-solid fa-cart-shopping"></i>Add to
+                                        cart</a></button>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+
+    <!--Footer Section-->
+    <div id="footer"></div>
+
+    <!--JS COde-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $("#header").load("header.html")
+            $("#footer").load("footer.html")
+        })
+    </script>
+
+</body>
+</html>

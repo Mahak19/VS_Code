@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Website</title>
+
+    <!-- Favicon link-->
+    <link rel="icon" type="image/x-icon"
+        href="https://media.istockphoto.com/id/1156475055/photo/clothes-in-shopping-mall.jpg?s=612x612&w=0&k=20&c=t7iEru1bJmMr5PMHQcFBl95bGHRrv__yRwd33CBnyts=">
+
+    <!-- Bootstrap CSS link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!-- Font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Bootstrap JS link -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+    <!-- jQuery link -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+
+    <!--Fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fuggles">
+
+    <style>
+        /* logo properties */
+        .navbar-brand {
+            font-size: 3vw;
+            font-family: 'Fuggles', cursive;
+            color: gold;
+        }
+
+        a {
+            font-family: "Playfair Display";
+        }
+
+        /* search section properties */
+        .search {
+            width: 500px;
+        }
+
+        .search-input {
+            border-radius: 0px 0px 0px 15px;
+        }
+
+        .search-btn {
+            background-color: gold;
+            border-radius: 0px 15px 0px 0px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        /* login button properties */
+        .login-btn1 {
+            color: black;
+            background-color: gold;
+            font-weight: bold;
+        }
+
+        .cart-btn1 {
+            color: gold;
+            font-size: 25px;
+        }
+
+        /* cart button properties */
+
+        .cart-btn {
+            color: rgb(218, 120, 33);
+            background-color: rgb(201, 197, 4);
+            font-size: 15px;
+        }
+
+        /* menu bar properties */
+        .menu-bar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            padding: 5px;
+            flex-wrap: wrap;
+        }
+
+        .menu-bar li a {
+            padding-left: 20px;
+            padding-right: 20px;
+            font-size: 20px;
+        }
+
+        /* hover properties*/
+
+        .search-btn:hover,
+        .login-btn1:hover {
+            background-color: rgb(215, 236, 236);
+            color: black;
+        }
+
+        .cart-btn:hover {
+            background-color: rgb(244, 231, 87);
+            color: black;
+        }
+
+        .menu-bar li a:hover {
+            background-color: rgb(244, 231, 87);
+        }
+
+        /* hover properties end */
+
+        /*Font awesome color*/
+        i {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header section start -->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <div class="container-fluid">
+
+            <!--Name of website-->
+            <i class="fa-solid fa-infinity fa-2xl"></i>
+            <h1><a href="index.html" class="navbar-brand ">InfiniteImpressions</a></h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar"
+                aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!--Search bar and button-->
+            <div class="container-fluid d-flex justify-content-center search-div">
+                <div class="row">
+                    <div class="col">
+                        <div class="input-group collapse navbar-collapse search" id="collapsibleNavbar">
+                            <input type="text" class="form-control search-input"
+                                placeholder="Product name, Category name, etc." name="search">
+                            <a href="product.html" class="text-decoration-none"><span
+                                    class="input-group-text search-btn">Search</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Login button-->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="login.html" class="nav-link"><button type="button"
+                                class="btn login-btn1">Login</button></a>
+                    </li>
+
+                    <!--Cart button-->
+                    <li class="nav-item">
+                        <a href="cart.html" class="nav-link cart-btn1"> <i class="fa-solid fa-basket-shopping fa-bounce fa-xl" style="color: rgb(250, 234, 65);"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--End of collapsible hamburger-->
+
+    <!--Navigation bar-->
+    <ul class="navbar-nav navbar-light bg-light menu-bar">
+
+        <!--Home Tab-->
+        <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+        </li>
+
+        <!--All Products Tab-->
+        <li class="nav-item">
+            <a class="nav-link" href="product.html">All Products</a>
+        </li>
+
+        <!--Womens Tab-->
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" href="#">Women</a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="women_all.html">All</a>
+                <a class="dropdown-item" href="women_dresses.html">Dresses</a>
+                <a class="dropdown-item" href="women_pants.html">Pants</a>
+                <a class="dropdown-item" href="women_skirts.html">Skirts</a>
+            </div>
+
+        <!--Mens Tab-->
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" href="#">Men</a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="men_all.html">All</a>
+                <a class="dropdown-item" href="men_shirts.html">Shirts</a>
+                <a class="dropdown-item" href="men_pants.html">Pants</a>
+                <a class="dropdown-item" href="men_hoodies.html">Hoodies</a>
+            </div>
+        </li>
+
+        <!--Kids Tab-->
+        <li class="nav-item">
+            <a class="nav-link" href="kids.html">Kids</a>
+        </li>
+
+        <!--Contact Tab-->
+        <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+    </ul>
+</body>
+</html>

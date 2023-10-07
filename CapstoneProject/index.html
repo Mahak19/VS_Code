@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!--JavaScript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--Fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing Script">
+    <style>
+        element.style{
+            background-image: url();
+        }
+        .bg-image {
+            background-size: cover;
+            min-height: 20rem;
+            background-repeat: no-repeat;
+            background-attachment:fixed;
+        }
+        .bg-image {
+        background-size: cover;
+        min-height: 60vh;
+        background-repeat: no-repeat;
+        }
+        .logo {
+        font-size: 10vw;
+        font-family: 'Dancing Script', cursive;
+        text-shadow: 2px 2px 8px rgba(16, 16, 0, 0.93);
+        }
+        .slogan {
+        text-shadow: 2px 2px 8px rgba(63, 6, 63, 0.93);
+        }
+
+    </style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <div id="header"></div>
+    
+        <!-- background image start -->
+        <div class="bg-image d-flex justify-content-center align-items-center img-fluid"
+            style="background-image: url('https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8b25saW5lJTIwc2hvcHBpbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60');">
+    
+            <div class="mask text-light d-flex justify-content-center flex-column text-center">
+                <h1 class="logo">InfiniteImpressions</h1>
+                <h3>
+                    <p class="m-0 slogan">Selling only the best things online</p>
+                </h3>
+            </div>
+        </div>
+        <!-- background image end -->
+    <div id="footer"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $("#header").load("header.html")
+            $("#footer").load("footer.html")
+        })
+    </script>
+</body>
+</html>
